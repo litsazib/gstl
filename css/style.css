@@ -1,115 +1,4 @@
 @charset "utf-8";
-
-/* CSS Document */
-
-
-
-
-
-/** Table of Content 
-
-- 	COMMON CLASSES				Line	68		-		171	
-
--	HEADER CONTENT				Line	176		-		349
-
--	NAVIGATION					Line	351		-		469
-
--	WHATS NEW					Line	532		-		638
-
--	TABS						Line	660		-		751
-
--	SLIDER						Line	557		-		801
-
--	LATEST NEWS					Line	809		-		860
-
--	IMAGE GALLERY				Line	886		-		956
-
--	CALENDER					Line	527		-		571
-
--	SPORTS SECTION				Line	962		-		1053
-
--	WIDGETS						Line	1126	-		1298
-
--	TRAVEL						Line	1304	-		1396
-
--	HOT NEWS					Line	1401	-		1472
-
--	MULTIMEDIA SECTION			Line	1478	-		1616
-
--	TECH AND TREVAL				Line	1746	-		1924
-
--	FOOTER						Line	1929	-		2246
-
--	BREADCRUMS					Line	2253	-		2286
-
--	SOCIAL NETWORKS				Line	2600	-		2648
-
--	BLOG POST					Line	2650	-		3199
-
--	CART						Line	3204	-		3340
-
--	EVENT LISTING				Line	3347	-		3478
-
--	GALLERY PAGE				Line	3486	-		3712
-
--	NEWS PAGE					Line	3982	-		4081
-
--	CSS TRANSITIONS				Line	4651	-		4657
-
--	BANNER						Line	4663	-		4740
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-End of Table of Content Line 30 **/
-
-
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 @import url(http://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
@@ -118,8 +7,23 @@ End of Table of Content Line 30 **/
 
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
+/*CUSTOM*/
+.navigation ul li a {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
 
 
+}
+.navigation ul{
+	margin-top:8px;
+}
+.navigation ul li a:hover{
+	background:#00A685;
+}
+.bx-viewport{
+	height:400px !important  ;
+}
 *{
 
 	margin:0px;
@@ -188,22 +92,11 @@ header {
 
 
 
-.navigation-bar{
-
-	float:left;
-
-	width:100%;
-
-	border-top:1px solid #e6e6e6;
-
-	box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.1);
-
-	-moz-box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.1);
-
-	-webkit-box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.1);
-
-	margin:0px 0px 6px 0px;
-
+.navigation-bar {
+  border-top: 1px solid #e6e6e6;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+  float: left;
+  width: 100%;
 }
 
 .language{
