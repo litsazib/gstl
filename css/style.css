@@ -43,9 +43,12 @@
 html.js.webgl.no-touch.geolocation.video.svg.inlinesvg.smil.svgclippaths.mediaqueries.cssresize.skrollr.skrollr-desktop body div.wrapper div.contant section.testimonials div.container.testimonial-contant div.testimonial-data div.bx-wrapper div.bx-viewport{
 height:100px !important; 
 }
-
-
-
+.padding_less{
+	padding:0px !important ;
+}
+.widget h2{
+	color:#00A685;
+}
 
 
 
