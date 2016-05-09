@@ -1897,3 +1897,52 @@ section.testimonials{
     overflow: visible !important;
   }
 }
+
+
+
+/*samad*/
+.teachers .text p {
+	font-size: 15px;
+	font-weight: normal;
+}
+.teachers .text h2 {
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+.contant .sec-header h2 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+@media (max-width: 979px) {
+.navbar .container {
+	width: auto;
+	padding: 0px 15px;
+}
+.navbar-fixed-top {
+	margin-bottom: 0px;
+}
+}
+
+@media (min-width:979px) and (max-width: 991px) {
+	.nav > li > a {
+	padding: 10px 13px;
+}
+}
+
+@media (max-width: 767px) {
+.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+	margin:0px;
+}
+}
+.contant .sec-header h2 {
+	font-weight: 600;
+}
+
+
+@media (max-width: 880px) {
+	.carousel-caption {
+	top: 13%;
+	}
+}

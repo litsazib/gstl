@@ -5,12 +5,12 @@
 	<title>Grand Soft Technology Ltd.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- CUSTOM CSS -->
-	<link href="css/style.css" rel="stylesheet" media="screen">
+	
 	<link href="css/color.css" rel="stylesheet" media="screen">
 	<link href="css/transitions.css" rel="stylesheet" media="screen">
 	<!-- BOOTSTRAP -->
-	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-	<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
 	<!-- BX SLIDER-->
 	<link href="css/jquery.bxslider.css" rel="stylesheet" media="screen">
 	<!-- OWL CAROUSEL -->
@@ -19,12 +19,81 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
 	<!-- PARALLAX BACKGROUNDS -->
 	<link href="css/parallax.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" media="screen">
+	
+	<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+
+	
+
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!--WRAPPER START-->
 <div class="wrapper">
     <!--HEADER START-->
-    <header>
+	<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="images/logo_new.png" alt=""></a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+		  <li><a href="#">Home</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#service">Services</a></li>
+								<li><a href="#course">Courses</a></li>
+								<li><a href="#team">Team</a></li>
+								<li><a href="#hosting">Hosting</a></li>
+								<li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav> 
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/CMSD.jpg" alt="Chania">
+	  
+    </div>
+
+    <div class="item">
+      <img src="images/sl1.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="images/DKC-Web-Design-Banner.jpg" alt="Flower">
+	  <div class="carousel-caption">
+        <h3>web design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio condimentum, suscipit elit non, sodales mauris. Aliquam erat volutpat. Integer eu risus consequat, tempus odio nec, hendrerit risus. .</p>
+		<button type="button" class="btn btn-slide">Success</button>
+	  </div>
+    </div>
+
+    <div class="item">
+      <img src="images/sl3.jpg" alt="Flower">
+	  
+    </div>
+  </div>
+
+</div>
+   
+
+<!--   <header>
         <div class="navigation-bar">
         	<div class="container">
             	<div class="logo">
@@ -50,7 +119,7 @@
 
 						  </button>
 
-						  <div class="nav-collapse collapse">
+						  <div class="nav-collapse collapse" id="mynav">
 
 							<ul>
 
@@ -79,25 +148,45 @@
 
         </div>
 
-        <!--NAVIGATION END-->
 
-    </header>
 
-    <!--HEADER END-->
+    </header> 
 
-    <!--BANNER START-->
 
     <div class="banner">
 
-        <ul class="bxslider">
+       <!--  <ul class="bxslider">
 		<li><img src="images/slider/bg_2.jpg" alt=""> </li>
 		<li><img src="images/slider/bg_2.jpg" alt=""> </li>
         </ul>
         <div class="newsletters">
 			<h1>Grand Soft Technology Ltd.</h1>
-        </div>
+        </div> -->
+		
+		
+		
+		
+		
+<!-- 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/slider/bg_2.jpg" alt="Chania">
     </div>
+
+    <div class="item">
+      <img src="images/slider/bg_2.jpg" alt="Chania">
+    </div>
+  </div>
+
+</div>
+    </div> -->
 
     <!--BANNER END-->
 
@@ -107,7 +196,7 @@
 
     	<!--SERVICES SECTION START-->
 
-        <section>
+        <section id="service">
 
         	<div class="container">
 
@@ -133,13 +222,13 @@
 
                 	<!--SERVICE ITEM START-->
 
-                	<div class="span4">
+                	<div class="col-sm-4">
 
                     	<div class="services">
 
                         	<div class="header">
 
-                                <i class="fa fa-tablet"></i>
+                                <i class="fa fa-tablet outer-icon"></i>
 
                                 <i class="fa fa-desktop inner-icon"></i>
 
@@ -147,7 +236,7 @@
 
                             <div class="text">
 
-                                <h3><a href="index.htm#">Professional Web Development Training </a></h3>
+                                <h3><a href="index.htm#">Web Development</a></h3>
 
                                 <p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>
 
@@ -161,7 +250,7 @@
 
                     <!--SERVICE ITEM START-->
 
-                	<div class="span4">
+                	<div class="col-sm-4">
 
                     	<div class="services">
 
@@ -189,7 +278,7 @@
 
                     <!--SERVICE ITEM START-->
 
-                	<div class="span4">
+                	<div class="col-sm-4">
 
                     	<div class="services">
 
@@ -203,7 +292,7 @@
 
                             <div class="text">
 
-                                <h3><a href="index.htm#">Corporate Hardware Solution  </a></h3>
+                                <h3><a href="index.htm#">Hardware Solution  </a></h3>
 
                                 <p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>
 
@@ -226,220 +315,92 @@
         <!--LATEST COURSES SECTION START-->
 
         <section class="gray-bg" id="course">
-
         	<div class="container">
-
+<div class="row">
             	<!--SECTION HEADER START-->
-
             	<div class="sec-header">
-
                 	<h2>Latest Courses</h2>
-
                     <p>Check Our Featured Courses</p>
-
                     <span></span>
-
                     <span></span>
-
                     <span></span>
-
                 </div>
-
                 <!--SECTION HEADER END-->
-
                 <div class="customNavigation">
-
                     <a class="btn prev"><i class="fa fa-angle-left"></i></a>
-
                     <a class="btn next"><i class="fa fa-angle-right"></i></a>
-
                 </div>
-
                 <div id="owl-carousel" class="owl-carousel owl-theme">
-
                 	<!--COURSE ITEM START-->
 
                     <div class="course">
-
                     	<div class="thumb">
-
-                        	<a href="index.htm#"><img src="images/web-dev.png" alt=""></a>
-
-                            <div class="price"><span>$</span>190</div>
-
-                        </div>
-
-                    	<div class="text">
-
-                        	<div class="header">
-
-                            	<h4>WEB Development</h4>
-
-                                <div class="rating">
-
-
-                                </div>
-
-                            </div>
-
-                            <div class="course-name">
-
-                            	<p>Course Fee - </p>
-
-                                <span>BDT-15000</span>
-
-                            </div>
-
-                            <div class="course-detail-btn">
-
-                            	<a href="index.htm#">Subscribe</a>
-
-                                <a href="details.html">Detail</a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!--COURSE ITEM END-->
-
-                    <!--COURSE ITEM START-->
-
-                    <div class="course">
-
-                    	<div class="thumb">
-
-                        	<a href="index.htm#"><img src="images/phpmysql.png" alt=""></a>
-
-                            <div class="price"><span>$</span>190</div>
-
-                        </div>
-
-                    	<div class="text">
-
-                        	<div class="header">
-
-                            	<h4>PHP MYSQL </h4>
-
-                                <div class="rating">
-
-
-                                </div>
-
-                                </div>
-
-                            <div class="course-name">
-
-                            	<p>Course Fee - </p>
-
-                                <span>BDT-15000</span>
-
-                            </div>
-
-                            <div class="course-detail-btn">
-
-                            	<a href="index.htm#">Subscribe</a>
-
-                                <a href="index.htm#">Detail</a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!--COURSE ITEM END-->
-
-                    <!--COURSE ITEM START-->
-
-                    <div class="course">
-
-                    	<div class="thumb">
-
-                        	<a href="index.htm#"><img src="images/wordpress-multisitio.jpg" alt=""></a>
-
-                            <div class="price"><span>$</span>190</div>
-
-                        </div>
-
-                    	<div class="text">
-
-                        	<div class="header">
-
-                            	<h4>Wordpress Development </h4>
-
-                                <div class="rating">
-
-                                </div>
-
-                            </div>
-
-                            <div class="course-name">
-
-
-                            	<p>Course Fee - </p>
-
-                                <span>BDT-15000</span>
-
-                            </div>
-
-                            <div class="course-detail-btn">
-
-                            	<a href="index.htm#">Subscribe</a>
-
-                                <a href="index.htm#">Detail</a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!--COURSE ITEM END-->
-
-                    <!--COURSE ITEM START-->
-
-                    <div class="course">
-
-                    	<div class="thumb">
-
                         	<a href="index.htm#"><img src="images/web_design.jpg" alt=""></a>
-
-                            <div class="price"><span>$</span>190</div>
-
                         </div>
-
+						<div class="price"><span>$</span>190</div>
                     	<div class="text">
-
                         	<div class="header">
-
-                            	<h4>Web Design</h4>
-
+                            	<h4>WEB Development</h4>
                                 <div class="rating">
-
                                 </div>
-
                             </div>
-
                             <div class="course-name">
-
                             	<p>Course Fee - </p>
-
                                 <span>BDT-15000</span>
-
                             </div>
-
                             <div class="course-detail-btn">
-
-                            	<a href="index.htm#">Subscribe</a>
-
-                                <a href="index.htm#">Detail</a>
-
+                            	<a href="index.htm#"> <i class="fa fa-rss" aria-hidden="true"></i> Subscribe</a>
+                                <a href="details.html"><i class="fa fa-list" aria-hidden="true"></i> Detail</a>
                             </div>
-
                         </div>
+                    </div>
+                    <!--COURSE ITEM END-->
 
+                    <!--COURSE ITEM START-->
+                    <div class="course">
+                    	<div class="thumb">
+                        	<a href="index.htm#"><img src="images/405282_27d2.jpg" alt=""></a>
+                        </div>
+						<div class="price"><span>$</span>190</div>
+                    	<div class="text">
+                        	<div class="header">
+                            	<h4>PHP MYSQL </h4>
+                                <div class="rating">
+                                </div>
+                                </div>
+                            <div class="course-name">
+                            	<p>Course Fee - </p>
+                                <span>BDT-15000</span>
+                            </div>
+							<div class="course-detail-btn">
+                            	<a href="index.htm#"> <i class="fa fa-rss" aria-hidden="true"></i> Subscribe</a>
+                                <a href="details.html"><i class="fa fa-list" aria-hidden="true"></i> Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--COURSE ITEM END-->
+
+                    <!--COURSE ITEM START-->
+                    <div class="course">
+                    	<div class="thumb">
+                        	<a href="index.htm#"><img src="images/wordpress-custom-post-types.jpg" alt=""></a>
+                        </div>
+						<div class="price"><span>$</span>190</div>
+                    	<div class="text">
+                        	<div class="header">
+                            	<h4>Wordpress Development </h4>
+                                <div class="rating">
+                                </div>
+                            </div>
+                            <div class="course-name">
+                            	<p>Course Fee - </p>
+                                <span>BDT-15000</span>
+                            </div>
+                            <div class="course-detail-btn">
+                            	<a href="index.htm#"> <i class="fa fa-rss" aria-hidden="true"></i> Subscribe</a>
+                                <a href="details.html"><i class="fa fa-list" aria-hidden="true"></i> Detail</a>
+                            </div>
+                        </div>
                     </div>
 
                     <!--COURSE ITEM END-->
@@ -447,48 +408,52 @@
                     <!--COURSE ITEM START-->
 
                     <div class="course">
-
                     	<div class="thumb">
-
-                        	<a href="index.htm#"><img src="images/seo.png" alt=""></a>
-
-                            <div class="price"><span>$</span>127</div>
-
+                        	<a href="index.htm#"><img src="images/services-web-design-300x300.png" alt=""></a>
                         </div>
-
+						<div class="price"><span>$</span>190</div>
                     	<div class="text">
-
                         	<div class="header">
-
-                            	<h4>SEO</h4>
-
-                            	<div class="rating">
-
-
-
+                            	<h4>Web Design</h4>
+                                <div class="rating">
                                 </div>
-
                             </div>
+                            <div class="course-name">
+                            	<p>Course Fee - </p>
+                                <span>BDT-15000</span>
+                            </div>
+                            <div class="course-detail-btn">
+                            	<a href="index.htm#"> <i class="fa fa-rss" aria-hidden="true"></i> Subscribe</a>
+                                <a href="details.html"><i class="fa fa-list" aria-hidden="true"></i> Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--COURSE ITEM END-->
 
+                    <!--COURSE ITEM START-->
+                    <div class="course">
+                    	<div class="thumb">
+                        	<a href="index.htm#"><img src="images/seo-bg.jpg" alt=""></a>
+                        </div>
+						<div class="price"><span>$</span>127</div>
+                    	<div class="text">
+                        	<div class="header">
+                            	<h4>SEO</h4>
+                            	<div class="rating">
+                                </div>
+                            </div>
                             <div class="course-name">
                             	<p>Course Fee - </p>
                                 <span>BDT-10000</span>
-
                             </div>
-
                             <div class="course-detail-btn">
-
-                            	<a href="index.htm#">Subscribe</a>
-
-                                <a href="index.htm#">Detail</a>
-
+                            	<a href="index.htm#"> <i class="fa fa-rss" aria-hidden="true"></i> Subscribe</a>
+                                <a href="details.html"><i class="fa fa-list" aria-hidden="true"></i> Detail</a>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
-
+			</div>
             </div>
 
         </section>
@@ -505,19 +470,19 @@
 
                 	<div class="row">
 
-                    	<div class="span6">
+                    	<div class="col-sm-6">
 
-                        	<img src="images/testimonials-bg2.png" alt="">
+                        	<img src="images/team-training.png" alt="" class="img-responsive">
 
                         </div>
 
-                        <div class="span6">
+                        <div class="col-sm-6">
 
                         	<div class="student-form">
 
                             	<div class="header">
 
-                                	<h2>On-line Apply Form</h2>
+                                	<h2>Apply On-line</h2>
 
                                     <p>Learn how to build websites &amp; apps, write code or start a business.</p>
 
@@ -525,15 +490,15 @@
 
                                 <div class="form-data">
 
-                                	<ul>
+                                	<!-- <ul>
 
-                                    	<li><input type="text" class="input-block-level" placeholder="Name"></li>
+                                    	<li><input type="text" class="form-control input-block-level" placeholder="Name"></li>
 
-                                        <li><input type="text" class="input-block-level" placeholder="Email ID"></li>
+                                        <li><input type="text" class="form-control input-block-level" placeholder="Email ID"></li>
 
-                                        <li><input type="text" class="input-block-level" placeholder="Phone Number"></li>
+                                        <li><input type="text" class="form-control input-block-level" placeholder="Phone Number"></li>
                                         <li>
-											<select class="input-block-level">
+											<select class="form-control input-block-level">
 											  <option value="Select" selected>Select</option>
 											  <option value="Web Design">Web design</option>								  
 											  <option value="Web Design">PHM MYSQL</option>
@@ -568,8 +533,42 @@
 
                                         </li>
 
-                                    </ul>
+                                    </ul> -->
+									<form class="form-horizontal" role="form">
+									<div class="form-group">
+      <div class="col-sm-12">
+        <input type="email" class="form-control" id="email" placeholder="Enter Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-12">
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-12">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter Phone Number">
+      </div>
+    </div>
+	<div class="form-group">
+      <div class="col-sm-12 selectbox">          
+        <select class="form-control input-block-level">
+			<option value="Select" selected>Select Your Course</option>
+			<option value="Web Design">Web design</option>								  
+			<option value="Web Design">PHM MYSQL</option>
+			<option value="web design and development">Web Design And Development</option>
+			<option value="Wordpress Theme Development">Wordpress Theme Development </option>
+		</select>
 
+      </div>
+    </div>
+
+    <div class="form-group">        
+      <div class="col-sm-12">
+        <button type="submit" class="btn btn-default btn-block">Submit</button>
+      </div>
+    </div>
+  </form>
                                 </div>
 
                             </div>
@@ -580,12 +579,7 @@
 
                 </div>            
 
-                <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:0px -1000px;"></div>
-
-                <div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:0px -1500px;"></div>
-
-                <div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:0px -900px;"></div>
-
+<div id="bg6" data-0="background-position:0px 0px;" data-end="background-position:0px -1800px;"></div>
             </div>
 
         </section>
@@ -647,7 +641,7 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -670,7 +664,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -693,7 +687,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -717,11 +711,11 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/jquery.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="images/course/web-icon4.jpg" alt=""></a>
 
                             </div>
 
@@ -741,7 +735,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -763,11 +757,11 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/wordpress.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="images/wordpress.png" alt=""></a>
 
                             </div>
 
@@ -794,7 +788,7 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -818,7 +812,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -842,7 +836,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -865,11 +859,11 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/jquery.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="images/course/web-icon4.jpg" alt=""></a>
 
                             </div>
 
@@ -888,7 +882,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -911,11 +905,11 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/psdtohtml.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="images/course/maxresdefault.jpg" alt=""></a>
 
                             </div>
 
@@ -943,7 +937,7 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -967,7 +961,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -991,7 +985,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1014,7 +1008,7 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1038,7 +1032,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1062,7 +1056,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1092,7 +1086,7 @@
 
                     	 <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1116,7 +1110,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1140,7 +1134,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1163,7 +1157,7 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1186,7 +1180,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1210,7 +1204,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1242,7 +1236,7 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1265,7 +1259,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1289,7 +1283,7 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1318,7 +1312,7 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1342,7 +1336,7 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1366,7 +1360,7 @@
 
                          <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1390,7 +1384,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1414,7 +1408,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1438,7 +1432,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1470,7 +1464,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1494,7 +1488,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1518,7 +1512,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1542,7 +1536,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1566,7 +1560,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1589,7 +1583,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1612,7 +1606,7 @@
 
 						<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1635,7 +1629,7 @@
 
 						<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1666,7 +1660,7 @@
 
                     	<!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1690,7 +1684,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1714,7 +1708,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1738,7 +1732,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1762,7 +1756,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1786,7 +1780,7 @@
 
                         <!--LIST ITEM START-->
 
-                    	<li class="span4">
+                    	<li class="col-sm-4">
 
                         	<div class="thumb">
 
@@ -1848,7 +1842,7 @@
 
                 	<!--TEACHERS THUMB START-->
 
-                	<div class="span3">
+                	<div class="col-sm-3">
 
                     	<div class="teachers">
 
@@ -1894,7 +1888,7 @@
 
                     <!--TEACHERS THUMB START-->
 
-                	<div class="span3">
+                	<div class="col-sm-3">
 
                     	<div class="teachers">
 
@@ -1940,7 +1934,7 @@
 
                     <!--TEACHERS THUMB START-->
 
-                	<div class="span3">
+                	<div class="col-sm-3">
 
                     	<div class="teachers">
 
@@ -1986,7 +1980,7 @@
 
                     <!--TEACHERS THUMB START-->
 
-                	<div class="span3">
+                	<div class="col-sm-3">
 
                     	<div class="teachers">
 
@@ -2040,586 +2034,145 @@
 
         <!--PAPULAR POSTS SECTION START-->
 
-        <section class="papular-post">
-
-        	<div id="bg4" data-0="background-position:0px 0px;" data-end="background-position:0px -1000px;"></div>
-
-            <div class="container post-contant">
-
-            	<!--SECTION HEADER START-->
-
-                <div class="sec-header">
-
-                    <h2>Popular Posts</h2>
-
-                    <p>Latest From Blog</p>
-
-                    <span></span>
-
-                    <span></span>
-
-                    <span></span>
-
-                </div>
-
-            	<!--SECTION HEADER END-->
-
-            	<div class="row">
-
-                	<div class="span6">
-
-                    	<div class="post">
-
-                        	<div class="thumb"><img src="images/post.png" alt=""></div>
-
-                            <!--POST HEADER START-->
-
-                            <div class="header">
-
-                                <!--POST DATE START-->
-
-                                <div class="post-date">
-
-                                    <p>May<span>11</span>2014</p>
-
-                                </div>
-
-                                <!--POST DATE START-->
-
-                                <div class="icons">
-
-                                	<ul>
-
-                                    	<li><a href="index.htm#"><i class="fa fa-heart-o"></i></a><span class="notification">25</span></li>
-
-                                        <li><a href="index.htm#"><i class="fa fa-link"></i></a></li>
-
-                                        <li><a href="index.htm#"><i class="fa fa-comments-o"></i></a></li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                            <!--POST HEADER END-->
-
-                            <div class="text">
-
-                            	<h2>A Post With Everything In It</h2>
-
-                                <h5>Writer David / Poetry course</h5>
-
-                                <p>Vel ut quas utroque placerat, kasd utinam epicuri at est, hendrerit argumentum dissentias ei nec. Vel ut quas utroque placerat, kasd utinam epicuri at est, hendrerit argumentum dissentias ei nec. </p>
-
-                                <a href="index.htm#" class="more">Read More</a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="span6">
-
-                    	<div class="post">
-
-                        	<div class="thumb">
-
-                            	<img src="images/post.png" alt="">
-
-                            </div>
-
-                            <!--POST HEADER START-->
-
-                            <div class="header">
-
-                                <!--POST DATE START-->
-
-                                <div class="post-date">
-
-                                    <p>May<span>11</span>2014</p>
-
-                                </div>
-
-                                <!--POST DATE START-->
-
-                                <div class="icons">
-
-                                	<ul>
-
-                                    	<li><a href="index.htm#"><i class="fa fa-heart-o"></i></a><span class="notification">25</span></li>
-
-                                        <li><a href="index.htm#"><i class="fa fa-link"></i></a></li>
-
-                                        <li><a href="index.htm#"><i class="fa fa-comments-o"></i></a></li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                            <!--POST HEADER END-->
-
-                            <div class="text">
-
-                            	<h2>A Post With Everything In It</h2>
-
-                                <h5>Writer David / Poetry course</h5>
-
-                                <p>Vel ut quas utroque placerat, kasd utinam epicuri at est, hendrerit argumentum dissentias ei nec. Vel ut quas utroque placerat, kasd utinam epicuri at est, hendrerit argumentum dissentias ei nec. </p>
-
-                                <a href="index.htm#" class="more">Read More</a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
+       
 
         <!--PAPULAR POSTS SECTION END-->
 
         <!--GALLERY AND NEXT COURSES SECTION START-->
 
-        <section class="gray-bg" id="event">
-
-        	<div class="container">
-
-            	<div class="row">
-
-                	<div class="span4">
-
-                    	<div class="box">
-
-                        	<h2>Event Gallery</h2>
-
-                            <ul class="event-galley">
-
-                            	<!--LIST ITEM START-->
-
-                            	<li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.htm#"><img alt="" src="images/event1.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <p>21-04-2012</p>
-
-                                        <h4>most popular courses </h4>
-
-                                        <a href="index.htm#" class="tags">Equipment</a>
-
-                                        <a href="index.htm#" class="tags">tips</a>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
-
-                            	<li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.htm#"><img alt="" src="images/event2.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <p>21-04-2012</p>
-
-                                        <h4>most popular courses </h4>
-
-                                        <a href="index.htm#" class="tags">Equipment</a>
-
-                                        <a href="index.htm#" class="tags">tips</a>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
-
-                            	<li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.htm#"><img alt="" src="images/event3.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <p>21-04-2012</p>
-
-                                        <h4>most popular courses </h4>
-
-                                        <a href="index.htm#" class="tags">Equipment</a>
-
-                                        <a href="index.htm#" class="tags">tips</a>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
-
-                            	<li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.htm#"><img alt="" src="images/event4.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <p>21-04-2012</p>
-
-                                        <h4>most popular courses </h4>
-
-                                        <a href="index.htm#" class="tags">Equipment</a>
-
-                                        <a href="index.htm#" class="tags">tips</a>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                    <div class="span4">
-
-                    	<div class="box lesson">
-
-                        	<h2>About Trial Lessons</h2>
-                            
-                           <!-- <iframe src="javascript:if(confirm('http://player.vimeo.com/video/10734556?title=0&amp;byline=0&amp;portrait=0&amp\n\nThis file was not retrieved because it was filtered out by your project settings.\n\nWould you like to open it from the server?'))window.location='http://player.vimeo.com/video/10734556?title=0&amp;byline=0&amp;portrait=0&amp'"></iframe> -->
-
-                            <div class="text">
-
-                            	<h3 class="pull-left">Learn Photography </h3>
-
-                                <span class="pull-right">$6 Per Hour</span>
-
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
-
-                            </div>                            
-
-                        </div>
-
-                    </div>
-
-                    <div class="span4">
-
-                    	<div class="box">
-
-                        	<h2>Our Next Courses</h2>
-
-                            <ul class="event-galley next-course">
-
-                            	<!--LIST ITEM START-->
-
-                            	<li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.htm#"><img alt="" src="images/event1.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <h4><a href="index.htm#">Computer</a></h4>
-
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-
-                                        <span class="rate"><small>$</small> 27</span>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
-
-                            	<li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.htm#"><img alt="" src="images/event2.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <h4><a href="index.htm#">Computer</a></h4>
-
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-
-                                        <span class="rate"><small>$</small> 27</span>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
-
-                            	<li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.htm#"><img alt="" src="images/event3.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <h4><a href="index.htm#">Computer</a></h4>
-
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-
-                                        <span class="rate"><small>$</small> 27</span>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
-
-                            	<li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.htm#"><img alt="" src="images/event4.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <h4><a href="index.htm#">Computer</a></h4>
-
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-
-                                        <span class="rate"><small>$</small> 27</span>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
+       
 
         <!--GALLERY AND NEXT COURSES SECTION END-->
 
         <!--TESTIMONIALS SECTION START-->
 
         <section class="testimonials">
-
         	<div class="container testimonial-contant">
-
             	<div class="sec-header">
-
-                    <h2>Read Our Testimonials</h2>
-
+                    <h2>Our Testimonials</h2>
                     <p>What Students say</p>
-
                     <span></span>
-
                     <span></span>
-
                     <span></span>
-
                 </div>
-
-                <div class="testimonial-data">
-
+                <!-- <div class="testimonial-data">
             	<ul class="bxslider2">
-
                     <li>
-
                         <div class="testimonial-text">
-
                             <p>Nunc ullamcorper massa eu magna varius commodo. Praesent nec enim eu quam suscipit tincidunt at sed tortor. </p>
-
                             <a href="index.htm#">Naiana Ansa</a>
-
                         </div>
-
                     </li>
-
                     <li>
-
                     	<div class="testimonial-text">
-
                             <p>Praesent nec enim eu quam suscipit tincidunt at sed tortor. Quisque quis massa faucibus leo egestas rhoncus </p>
-
                             <a href="index.htm#">Jasmine Dou</a>
-
                         </div>
-
                     </li>
-
                     <li>
-
                     	<div class="testimonial-text">
-
                             <p>Nunc ullamcorper massa eu magna varius commodo. Praesent nec enim eu quam suscipit tincidunt at sed tortor</p>
-
                             <a href="index.htm#">David john</a>
-
                         </div>
-
                     </li>
-
                     <li>
-
                         <div class="testimonial-text">
-
                             <p>Nunc ullamcorper massa eu magna varius commodo. Praesent nec enim eu quam suscipit tincidunt at sed tortor. Quisque quis massa faucibus leo egestas rhoncus. Cras pretium rhoncus urna nec accumsan. Proin vehicula ante non pulvinar dignissim. Curabitur in urna volutpat, suscipit metus at, consectetur ipsum. </p>
-
                             <a href="index.htm#">Roth Brown</a>
-
                         </div>
-
                     </li>
-
                     <li>
-
                     	<div class="testimonial-text">
-
                             <p>Praesent nec enim eu quam suscipit tincidunt at sed tortor. Quisque quis massa faucibus leo egestas rhoncus. Cras pretium rhoncus urna nec accumsan. Proin vehicula ante non pulvinar dignissim. Curabitur in urna volutpat, suscipit metus at, consectetur ipsum. </p>
-
                             <a href="index.htm#">Timothy Smith</a>
-
                         </div>
-
                     </li>
-
                 </ul>
-
                 <div id="bx-pager">
-
                     <a data-slide-index="0" href="index.htm">
-
                     	<div class="thumb">
-
                         	<img src="images/student-testi1.jpg" alt="">
-
                         </div>
-
                         <p>Naiana Ansa</p>
-
                         <p class="color">guitarist</p>
-
                     </a>
-
                     <a data-slide-index="1" href="index.htm">
-
                     	<div class="thumb">
-
                         	<img src="images/student-testi2.jpg" alt="">
-
                         </div>
-
                         <p>Jasmine Dou</p>
-
                         <p class="color">student</p>
-
                     </a>
-
                     <a data-slide-index="2" href="index.htm">
-
                     	<div class="thumb">
-
                         	<img src="images/student-testi3.jpg" alt="">
-
                         </div>
-
                         <p>David john</p>
-
                         <p class="color">student</p>
-
                     </a>
-
                     <a data-slide-index="3" href="index.htm">
-
                     	<div class="thumb">
-
                         	<img src="images/student-testi4.jpg" alt="">
-
                         </div>
-
                         <p>Roth Brown</p>
-
                         <p class="color">Artist</p>
-
                     </a>
-
                     <a data-slide-index="4" href="index.htm">
-
                     	<div class="thumb">
-
                         	<img src="images/student-testi5.jpg" alt="">
-
                         </div>
-
                         <p>Timothy Smith</p>
-
                         <p class="color">Smithies</p>
-
                     </a>
-
                     </div>
+                </div> -->
+               <!--  <div class="side-imgage"><img src="images/testimonials-bg2.png" alt=""></div> -->
+			   <div id="myCarousel1" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel1" data-slide-to="1"></li>
+    <li data-target="#myCarousel1" data-slide-to="2"></li>
+    <li data-target="#myCarousel1" data-slide-to="3"></li>
+  </ol>
 
-                </div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+	
+     <img src="images/student-testi1.jpg" alt="">
+	 <span>Maria josefain</span>
+	 <p>“ Tweeco is influenced by a few best sellers and well designed items in Themeforest. We are working on it using our spirit and passion. We hope it’s be so cool. ”</p>
+    </div>
 
-                <div class="side-imgage"><img src="images/testimonials-bg2.png" alt=""></div>
+    <div class="item">
+		
+      <img src="images/student-testi2.jpg" alt="Chania">
+	  <span>emilia jones</span>
+	  <p>“ Tweeco is influenced by a few best sellers and well designed items in Themeforest. We are working on it using our spirit and passion. We hope it’s be so cool. ”</p>
+    </div>
 
+    <div class="item">
+      
+      <img src="images/student-testi3.jpg" alt="Chania">
+	  <span>michel sayem</span>
+	  <p>“ Tweeco is influenced by a few best sellers and well designed items in Themeforest. We are working on it using our spirit and passion. We hope it’s be so cool. ”</p>
+    </div>
+
+    <div class="item">
+      
+      <img src="images/student-testi4.jpg" alt="Chania">
+	  <span>jhon doe</span>
+	  <p>“ Tweeco is influenced by a few best sellers and well designed items in Themeforest. We are working on it using our spirit and passion. We hope it’s be so cool. ”</p>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+
+</div>
             </div>
-
+			
         	<div id="bg5" data-0="background-position:0px 0px;" data-end="background-position:0px -1800px;"></div>
-
         </section>
 
         <!--TESTIMONIALS SECTION END-->
@@ -2646,7 +2199,7 @@
 
                 <div class="row">
 
-                	<div class="span4">
+                	<div class="col-sm-4">
 
                     	<div class="price-box">
 
@@ -2690,7 +2243,7 @@
 
                     </div>
 
-                    <div class="span4">
+                    <div class="col-sm-4">
 
                     	<div class="price-box">
 
@@ -2734,7 +2287,7 @@
 
                     </div>
 
-                    <div class="span4">
+                    <div class="col-sm-4">
 
                     	<div class="price-box">
 
@@ -2788,13 +2341,13 @@
 
         <!--FOLLOW US SECTION START-->
 
-        <section class="follow-us">
+        <section class="follow-us" id="contact">
 
         	<div class="container">
 
             	<div class="row">
 
-                	<div class="span4">
+                	<div class="col-sm-4">
 
                     	<div class="follow">
 
@@ -2816,7 +2369,7 @@
 
                     </div>
 
-                    <div class="span4">
+                    <div class="col-sm-4">
 
                     	<div class="follow">
 
@@ -2838,7 +2391,7 @@
 
                     </div>
 
-                    <div class="span4">
+                    <div class="col-sm-4">
 
                     	<div class="follow">
 
@@ -2883,7 +2436,7 @@
 
                 <!--OUR ARTICLE WIDGET START-->
 
-                    <!--<div class="span3">
+                    <!--<div class="col-sm-3">
 
                         <div class="widget widget-categories">
 
@@ -2919,49 +2472,41 @@
 
                     <!--TOP RATED WIDGET START-->
 
-                    <div class="span3">
-
-                        <div class="widget widget-facebook">
-
-                            <h2>Fcebook</h2>
-
-                            <div class="pull-left">
-
-                            	<img src="images/Capture.PNG" alt="">
-
-                            </div>
-
+                    <div class="col-sm-3">
+						<div class="widget widget-newsletter">
+                            <h2>Our Office Address</h2>
+                            <address> 
+								<p><i class="fa fa-map-marker"></i>House #3, 5th floor, Avenue #1, Block #A, Section #11, Mirpur, 1216 Dhaka</p>
+								<p><i class="fa fa-phone"></i> +8801234567891</p>
+								<p><i class="fa fa-fax"></i>+8801737803547</p>
+								<p><i class="fa fa-envelope"></i>simt.ashim@gmail.com</p>
+							</address>                          
                         </div>
-
                     </div>
 
                     <!--TOP RATED WIDGET END-->
 
                     <!--RECENT REVIES WIDGET START-->
 
-                    <div class="span3">
-
-                        <div class="widget widget-newsletter">
-
-                            <h2>Our Office Address</h2>
-
-                            <address> 
-								House #3, 5th floor, Avenue #1, Block #A, Section #11, Mirpur, 1216 Dhaka
-							</address>                          
-
+                    <div class="col-sm-3">
+						<div class="widget widget-facebook">
+                            <h2>Fcebook</h2>
+                            <div class="pull-left">
+                            	<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="100%" height="250" style="border:none;overflow:hidden" 
+								scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                            </div>
                         </div>
-
                     </div>
                     <!--RECENT REVIES WIDGET END-->
 
                     <!--RECENT POSTS WIDGET START-->
 
-                    <div class="span6">
+                    <div class="col-sm-6">
 
                         <div class="widget widget-map">
 
                             <h2>Google Map</h2>														
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:250px;width:600px;'><div id='gmap_canvas' style='height:250px;width:600px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://www.buywebtrafficexperts.com">buy targeted traffic</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(23.8159828,90.36624119999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(23.8159828,90.36624119999999)});infowindow = new google.maps.InfoWindow({content:'<strong>GSTL</strong><br>Mirpur 11<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:250px;width:100%;'><div id='gmap_canvas' style='height:250px;width:600px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://www.buywebtrafficexperts.com">buy targeted traffic</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(23.8159828,90.36624119999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(23.8159828,90.36624119999999)});infowindow = new google.maps.InfoWindow({content:'<strong>GSTL</strong><br>Mirpur 11<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
                         </div>
                     </div>
                 </div>

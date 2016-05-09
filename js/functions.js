@@ -1,6 +1,12 @@
 // JavaScript Document
 $(document).ready(function() {
 
+	$('.carousel').carousel({
+  interval: 5000
+});
+
+
+
 	$(".search-bar").on('click',function () {
 		$(".search-box").toggle("fade" )
 	});

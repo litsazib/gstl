@@ -1200,20 +1200,14 @@ COURSES SECTION START
 
 */
 
-.course{
-
-	background-color:#fff;
-
-	border-bottom:solid 2px rgba(0,0,0,0.1);
-
-	float:left;
-
-	text-align:left;
-
-	margin:15px 0px 0px 0px;
-
-	width:100%;
-
+.course {
+	background-color: #fff;
+	border-bottom: solid 2px rgba(0,0,0,0.1);
+	float: left;
+	text-align: left;
+	margin: 15px 15px !important;
+	width: auto;
+	position: relative;
 }
 
 .course .price{
@@ -1249,7 +1243,9 @@ COURSES SECTION START
 	line-height:40px;
 
 	visibility:hidden;
-
+transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
 }
 
 .course:hover .price{
@@ -1276,16 +1272,13 @@ COURSES SECTION START
 
 }
 
-.course .thumb{
-
-	float:left;
-
-	width:100%;
-
-	position:relative;
-
-	background-color:#000;
-
+.course .thumb {
+	float: left;
+	width: 100%;
+	position: relative;
+	background-color: #000;
+	overflow: hidden;
+	max-height:212px;
 }
 
 .course .thumb img{
@@ -1296,7 +1289,7 @@ COURSES SECTION START
 
 .course:hover .thumb img{
 
-	opacity:0.5;
+	opacity:0.9;
 
 }
 
@@ -1890,7 +1883,7 @@ TEACHERS SECTION START
 
 	height:30px;
 
-	width:30px;
+	width:28px;
 
 	display:inline-block;
 
@@ -9425,7 +9418,7 @@ EDIT PROFILE PAGE START
 
 .mega-manu-container .mega-manu .bg1{
 
-	background-image:url(../images/menu-bg.jpg);
+	background-image:url(../images/p-bg3.png);
 
 	background-repeat:no-repeat;
 
@@ -10124,4 +10117,385 @@ section.cp-our-services p, .contant section.cp-our-services h2{
 /*font-family: 'Oswald', sans-serif;*/
 
 
+
+
+
+/*SAMAD 08-05-2016*/
+.carousel {
+	margin-bottom: 0px;
+}
+.logo {
+	float: left;
+	margin: 10px 0px;
+	width: auto;
+	text-align: center;
+}
+.navigation {
+	float: right;
+}
+.carousel-indicators li {
+	cursor: pointer;
+}
+.carousel-indicators {
+	position: absolute;
+	top: inherit !important;
+	right: 0px;
+	z-index: 5;
+	margin: 0;
+	list-style: none;
+	bottom: 15px;
+	left: 0px;
+	margin: 0 auto !important;
+	width: 100% !important;
+	text-align: center;
+}
+.carousel-indicators li {
+	display: inline-block;
+	float: none;
+	width: 5%;
+	height: 5px;
+	margin-left: 5px;
+	text-indent: -999px;
+	background-color: #ccc;
+	background-color: rgba(255, 255, 255, 0.25);
+	border-radius: 0px;
+	background: #fff;
+}
+.carousel-indicators .active {
+	background-color: #012c3c;
+	width: 5%;
+	height: 5px;
+	border:none;
+}
+.navigation-bar {
+	position: fixed;
+	background: #fff;
+}
+
+.carousel-inner {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+/* 	height: 100vh;
+	min-height: 100vh; */
+	max-height:100vh;
+}
+.carousel {
+	position: relative;
+	/* height: 100vh;
+	min-height: 100vh; */
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	height: 100% !important;
+	background-size: cover;
+	/* min-height: 100vh; */
+	width: 100%;
+}
+
+
+
+.navbar-brand {
+height:auto;
+}
+ul.nav.navbar-nav.navbar-right {
+	margin-top: ;
+	line-height: ;
+	margin: 28px 0px 0px 0px;
+}
+.contant .sec-header h2 {
+	color: #012c3c;
+}
+.contant .sec-header p {
+	font-size: 16px;
+	color: #727272 !important;
+}
+.contant .sec-header h2 {
+	margin: 0px 0px 15px 0px;
+}
+.teachers .text {
+background-color: #012c3c;}
+.testimonials h2 {
+	color: #fff !important;
+}
+.teachers .text:hover p {
+	color: #fff !important;
+}
+.carousel {
+  clear: both !important;
+  position: relative;
+}
+
+
+
+#myCarousel1 p {
+	color: #fff;
+	width: 65% !important;
+	margin: 30px auto;
+}
+#myCarousel1 img {
+	max-width: 80px;
+	border-radius: 50%;
+	border-radius: ;
+	border: 3px solid #012c3c;
+	min-height: 80px;
+	max-height: 80px;
+	background: ;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+#myCarousel1 .carousel-inner > .item {
+	padding: 50px;
+	padding-top: 0px;
+}
+#myCarousel1 span {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: ;
+	color: #fff;
+}
+.carousel-caption {
+	bottom:inherit;
+	top: 35%;
+}
+.carousel-caption h3 {
+	font-size: 50px;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 2px #222;
+	font-weight: 800;
+}
+.carousel-caption p {
+	font-size: 16px;
+	padding: 0px 20px;
+	margin-top: 20px;
+}
+.btn.btn-slide {
+	background: transparent;
+	border: 3px solid #012c3c;
+	border-radius: 0px;
+	padding: 10px 50px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #012c3c;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+}
+.btn.btn-slide:hover{
+	background:#012c3c;
+	color:#fff;
+}
+.course{
+	border:1px solid #ddd;
+}
+.course .thumb img {
+	width: 100%;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+.navbar-default a{
+	transition:all 0.3s ease-in-out;
+	-moztransition:all 0.3s ease-in-out;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+	color: #fff;
+	background-color: #012c3c;
+}
+.sec-header span:nth-child(2n) {
+	background: #012c3c !important;
+}
+address p i {
+	padding-right: 10px;
+	color: #00A685;
+}
+.services .text:hover p,
+.thumb .text:hover p{
+	color:#333 !important;
+}
+.form-data button {
+	float: left;
+	border-radius: 0px;
+	background: transparent !important;
+	border: 3px solid #019875;
+	color: #fff;
+	text-transform: uppercase;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+.form-data button:hover{
+	background:#019875 !important;
+	color:#fff;
+	border-color:#019875;
+}
+.form-data input,
+.form-data select {
+	border-radius: 0px;
+	height: 40px;
+	font-size: 15px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+}
+.form-data input[type="email"]:focus,
+.form-data input[type="password"]:focus,
+.form-data select:focus{
+	border:none;
+	border-bottom: 3px solid #019875 !important;
+	box-shadow:none;
+}
+.form-data select{
+	-webkit-appearance:none;
+    -moz-appearance:none;
+	position:relative;
+}
+
+input::-webkit-input-placeholder {
+     color: black; /*Change the placeholder color*/
+     opacity: 0.5; /*Change the opacity between 0 and 1*/
+}
+input::-moz-placeholder {
+  color: #012c3c !important;
+  opacity:0.8 !important;
+}
+.contant section.form {
+	/* background: #D2D7D3 !important; */
+	background: url(../images/sl11.jpg);
+	position: relative;
+}
+.form::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	hie: ;
+	height: 100%;
+	background: #012c3c !important;
+	left: 0px;
+	opacity: 0.9;
+}
+.form-contant {
+	height:auto;
+	padding: 50px 0px;
+}
+.student-form .header p {
+	margin-bottom: 40px;
+}
+.col-sm-12.selectbox i {
+	position: absolute;
+	top: 12px;
+	left: ;
+	right: 30px;
+}
+
+
+.selectbox {
+    position:relative;
+}    
+.selectbox::before {
+	content: "\f0d7";
+	font-family: FontAwesome;
+	position: absolute;
+	top: 6px;
+	right: 30px;
+	z-index: 1;
+	font-size: 20px;
+	color: #019875;
+}
+.form-fields img {
+	margin-top: 30px;
+}
+.services h3 a{
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+.customNavigation {
+	margin: 0px;
+	padding-right: 16px;
+}
+.customNavigation a {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background: #012c3c;
+	color: #fff;
+	font-size: 16px;
+	padding: 2px 10px;
+	border-radius: 0px;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+.customNavigation a:hover{
+	color:#fff;
+	background:#019875;
+}
+.course:hover .thumb img{
+	-ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Safari */
+    transform: scale(1.1,1.1);
+}
+#bg56{
+	background-size: cover;
+	background-image: url(../images/apply-bg.jpg);
+	z-index: 0;
+}
 
