@@ -1946,3 +1946,9 @@ section.testimonials{
 	top: 13%;
 	}
 }
+
+@media (max-width: 979px) {
+	.carousel {
+		margin-top:0px;
+}
+}

@@ -1065,6 +1065,9 @@ MAIN CONTANT START
 	display:inline-block;
 
 	transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
 
 }
 
@@ -2923,7 +2926,8 @@ PRICING SECTION START
 
 }
 
-.price-box:hover p, .price-box:hover .price-contant i{
+.price-box:hover p, 
+.price-box:hover .price-contant i{
 
 	color:#fff;
 
@@ -10498,4 +10502,11 @@ input::-moz-placeholder {
 	background-image: url(../images/apply-bg.jpg);
 	z-index: 0;
 }
-
+.carousel {
+	clear: both !important;
+	position: relative;
+	margin-top: 100px;
+}
+.contant {
+	overflow-x: hidden;
+}

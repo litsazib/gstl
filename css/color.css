@@ -18,7 +18,8 @@
  .tabs .nav-tabs > .active > a:focus, .message-box h4, .faq-2 h3, .faq-2 .accordion-open p, .widget-slider h2, .course-topics .text h4 a, .search-result h1, 
  .search-result a, .search-result a:hover, .teacher-profile .profile .title p, .teacher-profile .profile .detail, .error-404, .header-2 .navigation ul li a:hover, 
  .header-2 .navigation ul ul li a, .header-5 .social-icons a, .edit-profile ul li:hover a, .editing table tr td a, .editing table tfoot tr td, .categories ul li a:hover,
- .related-courses ul li h4, .lesson-vid .text h4 a:hover, .subscribe-widget .or, .subscribe-widget a:hover, .questions p{
+ .related-courses ul li h4, .lesson-vid .text h4 a:hover, .subscribe-widget .or, .subscribe-widget a:hover, .questions p,
+ .price-box:hover .price-contant p.striped{
 	color: #019875  !important;
 }
 /* BACKGROUND COLOR */
