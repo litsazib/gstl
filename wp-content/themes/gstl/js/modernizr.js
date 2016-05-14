@@ -290,11 +290,11 @@ window.Modernizr = (function( window, document, undefined ) {
             try {
             if ( bool = !!elem.canPlayType ) {
                 bool      = new Boolean(bool);
-                bool.ogg  = elem.canPlayType('video/ogg; codecs="theora"')      .replace(/^no$/,'');
+                bool.ogg  = elem.canPlayType('video/ogg; codecs="theora"')      .replace(/^nojQuery/,'');
 
-                            bool.h264 = elem.canPlayType('video/mp4; codecs="avc1.42E01E"') .replace(/^no$/,'');
+                            bool.h264 = elem.canPlayType('video/mp4; codecs="avc1.42E01E"') .replace(/^nojQuery/,'');
 
-                bool.webm = elem.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/,'');
+                bool.webm = elem.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^nojQuery/,'');
             }
 
         } catch(e) { }
@@ -367,9 +367,9 @@ window.Modernizr = (function( window, document, undefined ) {
 
             var options = window.html5 || {};
 
-            var reSkip = /^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i;
+            var reSkip = /^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)jQuery/i;
 
-            var saveClones = /^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i;
+            var saveClones = /^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)jQuery/i;
 
             var supportsHtml5Styles;
 
@@ -569,7 +569,7 @@ window.Modernizr = (function( window, document, undefined ) {
     };
 
 
-    docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +
+    docElement.className = docElement.className.replace(/(^|\s)no-js(\s|jQuery)/, 'jQuery1jQuery2') +
 
                                                     (enableClasses ? ' js ' + classes.join(' ') : '');
 

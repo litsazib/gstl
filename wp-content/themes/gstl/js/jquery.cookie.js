@@ -13,7 +13,7 @@
         // Browser globals.
         factory(jQuery);
     }
-}(function ($) {
+}(function (jQuery) {
 
     var pluses = /\+/g;
 
@@ -35,11 +35,11 @@
         } catch(er) {}
     }
 
-    var config = $.cookie = function (key, value, options) {
+    var config = jQuery.cookie = function (key, value, options) {
 
         // write
         if (value !== undefined) {
-            options = $.extend({}, config.defaults, options);
+            options = jQuery.extend({}, config.defaults, options);
 
             if (typeof options.expires === 'number') {
                 var days = options.expires, t = options.expires = new Date();
@@ -83,10 +83,10 @@
 
     config.defaults = {};
 
-    $.removeCookie = function (key, options) {
-        if ($.cookie(key) !== undefined) {
+    jQuery.removeCookie = function (key, options) {
+        if (jQuery.cookie(key) !== undefined) {
             // Must not alter options, thus extending a fresh object...
-            $.cookie(key, '', $.extend({}, options, { expires: -1 }));
+            jQuery.cookie(key, '', jQuery.extend({}, options, { expires: -1 }));
             return true;
         }
         return false;

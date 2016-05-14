@@ -15,27 +15,27 @@ Inspired by: http://dribbble.com/shots/631074-Simple-Pie-Charts-II?list=popular&
 Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
 */
 
-(function($) {
-  $.easyPieChart = function(el, options) {
+(function(jQuery) {
+  jQuery.easyPieChart = function(el, options) {
     var addScaleLine, animateLine, drawLine, easeInOutQuad, rAF, renderBackground, renderScale, renderTrack,
       _this = this;
     this.el = el;
-    this.$el = $(el);
-    this.$el.data("easyPieChart", this);
+    this.jQueryel = jQuery(el);
+    this.jQueryel.data("easyPieChart", this);
     this.init = function() {
       var percent, scaleBy;
-      _this.options = $.extend({}, $.easyPieChart.defaultOptions, options);
-      percent = parseInt(_this.$el.data('percent'), 10);
+      _this.options = jQuery.extend({}, jQuery.easyPieChart.defaultOptions, options);
+      percent = parseInt(_this.jQueryel.data('percent'), 10);
       _this.percentage = 0;
-      _this.canvas = $("<canvas width='" + _this.options.size + "' height='" + _this.options.size + "'></canvas>").get(0);
-      _this.$el.append(_this.canvas);
+      _this.canvas = jQuery("<canvas width='" + _this.options.size + "' height='" + _this.options.size + "'></canvas>").get(0);
+      _this.jQueryel.append(_this.canvas);
       if (typeof G_vmlCanvasManager !== "undefined" && G_vmlCanvasManager !== null) {
         G_vmlCanvasManager.initElement(_this.canvas);
       }
       _this.ctx = _this.canvas.getContext('2d');
       if (window.devicePixelRatio > 1) {
         scaleBy = window.devicePixelRatio;
-        $(_this.canvas).css({
+        jQuery(_this.canvas).css({
           width: _this.options.size,
           height: _this.options.size
         });
@@ -45,8 +45,8 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
       }
       _this.ctx.translate(_this.options.size / 2, _this.options.size / 2);
       _this.ctx.rotate(_this.options.rotate * Math.PI / 180);
-      _this.$el.addClass('easyPieChart');
-      _this.$el.css({
+      _this.jQueryel.addClass('easyPieChart');
+      _this.jQueryel.css({
         width: _this.options.size,
         height: _this.options.size,
         lineHeight: "" + _this.options.size + "px"
@@ -112,7 +112,7 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
     drawLine = function(percent) {
       var offset;
       renderBackground();
-      _this.ctx.strokeStyle = $.isFunction(_this.options.barColor) ? _this.options.barColor(percent) : _this.options.barColor;
+      _this.ctx.strokeStyle = jQuery.isFunction(_this.options.barColor) ? _this.options.barColor(percent) : _this.options.barColor;
       _this.ctx.lineCap = _this.options.lineCap;
       _this.ctx.lineWidth = _this.options.lineWidth;
       offset = _this.options.size / 2 - _this.options.lineWidth / 2;
@@ -172,7 +172,7 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
     };
     return this.init();
   };
-  $.easyPieChart.defaultOptions = {
+  jQuery.easyPieChart.defaultOptions = {
     barColor: '#00a685',
     trackColor: '#ededed',
     scaleColor: false,
@@ -182,17 +182,17 @@ Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
     lineWidth: 18,
     animate: false,
     delay: false,
-    onStart: $.noop,
-    onStop: $.noop,
-    onStep: $.noop
+    onStart: jQuery.noop,
+    onStop: jQuery.noop,
+    onStep: jQuery.noop
   };
-  $.fn.easyPieChart = function(options) {
-    return $.each(this, function(i, el) {
-      var $el, instanceOptions;
-      $el = $(el);
-      if (!$el.data('easyPieChart')) {
-        instanceOptions = $.extend({}, options, $el.data());
-        return $el.data('easyPieChart', new $.easyPieChart(el, instanceOptions));
+  jQuery.fn.easyPieChart = function(options) {
+    return jQuery.each(this, function(i, el) {
+      var jQueryel, instanceOptions;
+      jQueryel = jQuery(el);
+      if (!jQueryel.data('easyPieChart')) {
+        instanceOptions = jQuery.extend({}, options, jQueryel.data());
+        return jQueryel.data('easyPieChart', new jQuery.easyPieChart(el, instanceOptions));
       }
     });
   };

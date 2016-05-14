@@ -1,60 +1,4 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Grand Soft Technology Ltd.</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- CUSTOM CSS -->
-	
-	<link href="css/color.css" rel="stylesheet" media="screen">
-	<link href="css/transitions.css" rel="stylesheet" media="screen">
-	<!-- BOOTSTRAP -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	
-	<!-- BX SLIDER-->
-	<link href="css/jquery.bxslider.css" rel="stylesheet" media="screen">
-	<!-- OWL CAROUSEL -->
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<!-- FONT AWESOME -->
-	<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-	<!-- PARALLAX BACKGROUNDS -->
-	<link href="css/parallax.css" rel="stylesheet" type="text/css" />
-	<link href="css/style.css" rel="stylesheet" media="screen">
-	
-	<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-
-	
-
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<!--WRAPPER START-->
-<div class="wrapper">
-    <!--HEADER START-->
-	<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index.html"><img src="images/Company_logo2-copy-[Converted].png" alt=""></a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-			<li class="active"><a href="#home">Home</a></li>
-			<li><a href="#service">Services</a></li>
-			<li><a href="#course">Courses</a></li>
-			<li><a href="#team">Team</a></li>
-			<li><a href="#Portfolio">Portfolio</a></li>
-			<li><a href="#hosting">Hosting</a></li>
-			<li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav> 
+<?php get_header();?>
 <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -68,157 +12,40 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/slider/ff.jpg" alt="Chania">
+      <img src="<?php echo get_stylesheet_directory_uri();?>/images/slider/ff.jpg" alt="Chania">
 	  
     </div>
 	<div class="item">
-      <img src="images/slider/SAD.jpg" alt="Chania">
+      <img src="<?php echo get_stylesheet_directory_uri();?>/images/slider/SAD.jpg" alt="Chania">
 	  
     </div>
 
     <div class="item">
-      <img src="images/slider/BECOME-A-FREELANCER.jpg" alt="Chania">
+      <img src="<?php echo get_stylesheet_directory_uri();?>/images/slider/BECOME-A-FREELANCER.jpg" alt="Chania">
     </div>
 
     <div class="item">
-      <img src="images/slider/sdf.jpg" alt="Flower">
+      <img src="<?php echo get_stylesheet_directory_uri();?>/images/slider/sdf.jpg" alt="Flower">
 	  
     </div>
 
     <div class="item">
-      <img src="images/slider/ac.jpg" alt="Flower">
-	  <!-- <div class="carousel-caption">
-        <h3>web design</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio condimentum, suscipit elit non, sodales mauris. Aliquam erat volutpat. Integer eu risus consequat, tempus odio nec, hendrerit risus. .</p>
-		<button type="button" class="btn btn-slide">Success</button>
-	  </div> -->
+      <img src="<?php echo get_stylesheet_directory_uri();?>/images/slider/ac.jpg" alt="Flower">
     </div>
   </div>
 
 </div>
-   
-
-<!--   <header>
-        <div class="navigation-bar">
-        	<div class="container">
-            	<div class="logo">
-                	<a href="index.html"><img src="images/logo_new.png" alt=""></a>
-                </div>
-
-
-                <div class="navigation">
-
-					<div class="navbar">
-
-					  <div class="navbar-inner" >
-
-						<div class="container">
-
-						  <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
-
-							<span class="icon-bar"></span>
-
-							<span class="icon-bar"></span>
-
-							<span class="icon-bar"></span>
-
-						  </button>
-
-						  <div class="nav-collapse collapse" id="mynav">
-
-							<ul>
-
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About us</a></li>
-								<li><a href="#service">Services</a></li>
-								<li><a href="#hosting">Hosting</a></li>
-								<li><a href="#course">Courses</a></li>
-								<li><a href="#event">Event</a></li>
-								<li><a href="#team">Team</a></li>
-								<li><a href="">Contact Us</a></li>
-
-							</ul>
-
-						  </div>
-
-						</div>
-
-					  </div>
-
-					</div>
-
-				</div>
-
-            </div>
-
-        </div>
-
-
-
-    </header> 
-
-
-    <div class="banner">
-
-       <!--  <ul class="bxslider">
-		<li><img src="images/slider/bg_2.jpg" alt=""> </li>
-		<li><img src="images/slider/bg_2.jpg" alt=""> </li>
-        </ul>
-        <div class="newsletters">
-			<h1>Grand Soft Technology Ltd.</h1>
-        </div> -->
-		
-		
-		
-		
-		
-<!-- 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-  </ol>
-
-
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="images/slider/bg_2.jpg" alt="Chania">
-    </div>
-
-    <div class="item">
-      <img src="images/slider/bg_2.jpg" alt="Chania">
-    </div>
-  </div>
-
-</div>
-    </div> -->
-
-    <!--BANNER END-->
-
-    <!--CONTANT START-->
 
     <div class="contant">
-
-    	<!--SERVICES SECTION START-->
-
         <section id="service">
-
         	<div class="container">
-
             	<!--SECTION HEADER START-->
-
             	<div class="sec-header">
-
                 	<h2>Our Services</h2>
-
                     <p>Take a look at what we have are doing</p>
-
                     <span></span>
-
                     <span></span>
-
                     <span></span>
-
                 </div>
 
                 <!--SECTION HEADER END-->
@@ -340,7 +167,7 @@
 
                     <div class="course">
                     	<div class="thumb">
-                        	<a href="index.htm#"><img src="images/web_design.jpg" alt=""></a>
+                        	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/web_design.jpg" alt=""></a>
                         </div>
 						<div class="price"><span>$</span>190</div>
                     	<div class="text">
@@ -364,7 +191,7 @@
                     <!--COURSE ITEM START-->
                     <div class="course">
                     	<div class="thumb">
-                        	<a href="index.htm#"><img src="images/405282_27d2.jpg" alt=""></a>
+                        	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/405282_27d2.jpg" alt=""></a>
                         </div>
 						<div class="price"><span>$</span>190</div>
                     	<div class="text">
@@ -388,7 +215,7 @@
                     <!--COURSE ITEM START-->
                     <div class="course">
                     	<div class="thumb">
-                        	<a href="index.htm#"><img src="images/wordpress-custom-post-types.jpg" alt=""></a>
+                        	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/wordpress-custom-post-types.jpg" alt=""></a>
                         </div>
 						<div class="price"><span>$</span>190</div>
                     	<div class="text">
@@ -414,7 +241,7 @@
 
                     <div class="course">
                     	<div class="thumb">
-                        	<a href="index.htm#"><img src="images/services-web-design-300x300.png" alt=""></a>
+                        	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/services-web-design-300x300.png" alt=""></a>
                         </div>
 						<div class="price"><span>$</span>190</div>
                     	<div class="text">
@@ -438,7 +265,7 @@
                     <!--COURSE ITEM START-->
                     <div class="course">
                     	<div class="thumb">
-                        	<a href="index.htm#"><img src="images/seo-bg.jpg" alt=""></a>
+                        	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/seo-bg.jpg" alt=""></a>
                         </div>
 						<div class="price"><span>$</span>127</div>
                     	<div class="text">
@@ -477,7 +304,7 @@
 
                     	<div class="col-sm-6">
 
-                        	<img src="images/team-training.png" alt="" class="img-responsive">
+                        	<img src="<?php echo get_stylesheet_directory_uri();?>/images/team-training.png" alt="" class="img-responsive">
 
                         </div>
 
@@ -650,7 +477,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="http://google.com"><img src="images/course/html5.jpg" alt=""></a>
+                            	<a href="http://google.com"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/html5.jpg" alt=""></a>
 
                             </div>
 
@@ -673,7 +500,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/css.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/css.jpg" alt=""></a>
 
                             </div>
 
@@ -696,7 +523,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/js.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/js.jpg" alt=""></a>
 
                             </div>
 
@@ -720,7 +547,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/web-icon4.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/web-icon4.jpg" alt=""></a>
 
                             </div>
 
@@ -744,7 +571,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/php.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/php.jpg" alt=""></a>
 
                             </div>
 
@@ -766,7 +593,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/wordpress.png" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/wordpress.png" alt=""></a>
 
                             </div>
 
@@ -797,7 +624,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/html5.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/html5.jpg" alt=""></a>
 
                             </div>
 
@@ -821,7 +648,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/css.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/css.jpg" alt=""></a>
 
                             </div>
 
@@ -845,7 +672,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/js.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/js.jpg" alt=""></a>
 
                             </div>
 
@@ -868,7 +695,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/web-icon4.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/web-icon4.jpg" alt=""></a>
 
                             </div>
 
@@ -891,7 +718,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/responsive.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/responsive.jpg" alt=""></a>
 
                             </div>
 
@@ -914,7 +741,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/maxresdefault.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/maxresdefault.jpg" alt=""></a>
 
                             </div>
 
@@ -946,7 +773,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/php.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/php.jpg" alt=""></a>
 
                             </div>
 
@@ -970,7 +797,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/theme.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/theme.jpg" alt=""></a>
 
                             </div>
 
@@ -994,7 +821,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/plugin.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/plugin.jpg" alt=""></a>
 
                             </div>
 
@@ -1017,7 +844,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/logo.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/logo.jpg" alt=""></a>
 
                             </div>
 
@@ -1041,7 +868,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/shotcoe.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/shotcoe.jpg" alt=""></a>
 
                             </div>
 
@@ -1065,7 +892,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/custompost.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/custompost.jpg" alt=""></a>
 
                             </div>
 
@@ -1095,7 +922,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/peogramming.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/peogramming.jpg" alt=""></a>
 
                             </div>
 
@@ -1119,7 +946,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/oop.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/oop.jpg" alt=""></a>
 
                             </div>
 
@@ -1143,7 +970,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/mysql.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/mysql.jpg" alt=""></a>
 
                             </div>
 
@@ -1166,7 +993,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/databasedesign.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/databasedesign.jpg" alt=""></a>
 
                             </div>
 
@@ -1189,7 +1016,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/live.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/live.jpg" alt=""></a>
 
                             </div>
 
@@ -1213,7 +1040,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/mvc.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/mvc.jpg" alt=""></a>
 
                             </div>
 
@@ -1245,7 +1072,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/offpage.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/offpage.jpg" alt=""></a>
 
                             </div>
 
@@ -1268,7 +1095,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/onpage.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/onpage.jpg" alt=""></a>
 
                             </div>
 
@@ -1292,7 +1119,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/digital.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/digital.jpg" alt=""></a>
 
                             </div>
 
@@ -1321,7 +1148,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic2.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic2.jpg" alt=""></a>
 
                             </div>
 
@@ -1345,7 +1172,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic1.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic1.jpg" alt=""></a>
 
                             </div>
 
@@ -1369,7 +1196,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic4.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic4.jpg" alt=""></a>
 
                             </div>
 
@@ -1393,7 +1220,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic3.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic3.jpg" alt=""></a>
 
                             </div>
 
@@ -1417,7 +1244,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic6.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic6.jpg" alt=""></a>
 
                             </div>
 
@@ -1441,7 +1268,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic5.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic5.jpg" alt=""></a>
 
                             </div>
 
@@ -1473,7 +1300,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/pharma.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/pharma.jpg" alt=""></a>
 
                             </div>
 
@@ -1497,7 +1324,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/hospital.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/hospital.jpg" alt=""></a>
 
                             </div>
 
@@ -1521,7 +1348,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/accounting.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/accounting.jpg" alt=""></a>
 
                             </div>
 
@@ -1545,7 +1372,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/pos.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/pos.jpg" alt=""></a>
 
                             </div>
 
@@ -1569,7 +1396,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/hrm.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/hrm.jpg" alt=""></a>
 
                             </div>
 
@@ -1592,7 +1419,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/doc.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/doc.jpg" alt=""></a>
 
                             </div>
 
@@ -1615,7 +1442,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/bulk.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/bulk.jpg" alt=""></a>
 
                             </div>
 
@@ -1638,7 +1465,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/course/dynamic.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/course/dynamic.jpg" alt=""></a>
 
                             </div>
 
@@ -1669,7 +1496,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic1.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic1.jpg" alt=""></a>
 
                             </div>
 
@@ -1693,7 +1520,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic2.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic2.jpg" alt=""></a>
 
                             </div>
 
@@ -1717,7 +1544,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic3.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic3.jpg" alt=""></a>
 
                             </div>
 
@@ -1741,7 +1568,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic4.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic4.jpg" alt=""></a>
 
                             </div>
 
@@ -1765,7 +1592,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic5.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic5.jpg" alt=""></a>
 
                             </div>
 
@@ -1789,7 +1616,7 @@
 
                         	<div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/topic6.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/topic6.jpg" alt=""></a>
 
                             </div>
 
@@ -1823,9 +1650,9 @@
             	<h2>Portfolio</h2>
             	<ul class="row">
                 	<li class="span3">
-                    	<img src="images/teachers1.jpg" alt="">
+                    	<img src="<?php echo get_stylesheet_directory_uri();?>/images/teachers1.jpg" alt="">
                         <div class="social-icons">
-                            <a href="images/gallery1.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>
+                            <a href="<?php echo get_stylesheet_directory_uri();?>/images/gallery1.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>
                             <br>
                             <a href="index.htm#"><i class="fa fa-picture-o"></i></a>
                             <a href="index.htm#"><i class="fa fa-link"></i></a>
@@ -1834,7 +1661,7 @@
                         </div>
                     </li>
                     <li class="span3">
-                    	<img src="images/teachers1.jpg" alt="">
+                    	<img src="<?php echo get_stylesheet_directory_uri();?>/images/teachers1.jpg" alt="">
                         <div class="social-icons">
                             <a href="images/gallery2.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>
                             <br>
@@ -1845,7 +1672,7 @@
                         </div>
                     </li>
                     <li class="span3">
-                    	<img src="images/teachers1.jpg" alt="">
+                    	<img src="<?php echo get_stylesheet_directory_uri();?>/images/teachers1.jpg" alt="">
                         <div class="social-icons">
                             <a href="images/gallery3.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>
                             <br>
@@ -1916,7 +1743,7 @@
 
                             <div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/teachers1.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/teachers1.jpg" alt=""></a>
 
                             </div>
 
@@ -1962,7 +1789,7 @@
 
                             <div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/teachers2.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/teachers2.jpg" alt=""></a>
 
                             </div>
 
@@ -2008,7 +1835,7 @@
 
                             <div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/teachers3.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/teachers3.jpg" alt=""></a>
 
                             </div>
 
@@ -2054,7 +1881,7 @@
 
                             <div class="thumb">
 
-                            	<a href="index.htm#"><img src="images/teachers4.jpg" alt=""></a>
+                            	<a href="index.htm#"><img src="<?php echo get_stylesheet_directory_uri();?>/images/teachers4.jpg" alt=""></a>
 
                             </div>
 
@@ -2188,28 +2015,28 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 	
-     <img src="images/student-testi1.jpg" alt="">
+     <img src="<?php echo get_stylesheet_directory_uri();?>/images/student-testi1.jpg" alt="">
 	 <span>Maria josefain</span>
 	 <p>“ Tweeco is influenced by a few best sellers and well designed items in Themeforest. We are working on it using our spirit and passion. We hope it’s be so cool. ”</p>
     </div>
 
     <div class="item">
 		
-      <img src="images/student-testi2.jpg" alt="Chania">
+      <img src="<?php echo get_stylesheet_directory_uri();?>/images/student-testi2.jpg" alt="Chania">
 	  <span>emilia jones</span>
 	  <p>“ Tweeco is influenced by a few best sellers and well designed items in Themeforest. We are working on it using our spirit and passion. We hope it’s be so cool. ”</p>
     </div>
 
     <div class="item">
       
-      <img src="images/student-testi3.jpg" alt="Chania">
+      <img src="<?php echo get_stylesheet_directory_uri();?>/images/student-testi3.jpg" alt="Chania">
 	  <span>michel sayem</span>
 	  <p>“ Tweeco is influenced by a few best sellers and well designed items in Themeforest. We are working on it using our spirit and passion. We hope it’s be so cool. ”</p>
     </div>
 
     <div class="item">
       
-      <img src="images/student-testi4.jpg" alt="Chania">
+      <img src="<?php echo get_stylesheet_directory_uri();?>/images/student-testi4.jpg" alt="Chania">
 	  <span>jhon doe</span>
 	  <p>“ Tweeco is influenced by a few best sellers and well designed items in Themeforest. We are working on it using our spirit and passion. We hope it’s be so cool. ”</p>
     </div>
@@ -2344,7 +2171,7 @@
 
                     	<div class="follow">
 
-                        	<a href="index.htm#">
+                        	<a href="https://www.facebook.com/grandsofttechnology/?fref=ts">
 
                                 <i class="fa fa-facebook"></i>
 
@@ -2366,7 +2193,7 @@
 
                     	<div class="follow">
 
-                        	<a href="index.htm#">
+                        	<a href="https://plus.google.com/113471496897683101109">
 
                                 <i class="fa fa-google"></i>
 
@@ -2388,7 +2215,7 @@
 
                     	<div class="follow">
 
-                        	<a href="index.htm#">
+                        	<a href="https://bd.linkedin.com/in/sumon-reza-94a2058b">
 
                                 <i class="fa fa-linkedin"></i>
 
@@ -2418,135 +2245,4 @@
 
     <!--CONTANT END-->
 
-    <!--FOOTER START-->
-
-    <footer>
-        <div class="bottom-footer">
-
-            <div class="container">
-
-                <div class="row">
-
-                <!--OUR ARTICLE WIDGET START-->
-
-                    <!--<div class="col-sm-3">
-
-                        <div class="widget widget-categories">
-
-                            <h2>Course Categories</h2>
-
-                            <ul>
-
-                                <li><a href="index.htm#">Site Style Changer</a></li>
-
-                                <li><a href="index.htm#">Bredcrums</a></li>
-
-                                <li><a href="index.htm#">Bottom Sidebar</a></li>
-
-                                <li><a href="index.htm#">Right Sidebar</a></li>
-
-                                <li><a href="index.htm#">Left Sidebar</a></li>
-
-                                <li><a href="index.htm#">Sitemap Page Setting</a></li>
-
-                                <li><a href="index.htm#">Site Style Changer</a></li>
-
-                                <li><a href="index.htm#">Bredcrums</a></li>
-
-                                <li><a href="index.htm#">Bottom Sidebar</a></li>
-
-                            </ul>
-
-                        </div>
-
-                    </div>-->
-
-                    <!--OUR ARTICLE WIDGET END-->
-
-                    <!--TOP RATED WIDGET START-->
-
-                    <div class="col-sm-3">
-						<div class="widget widget-newsletter">
-                            <h2>Our Office Address</h2>
-                            <address> 
-								<p><i class="fa fa-map-marker"></i>House #3, 5th floor, Avenue #1, Block #A, Section #11, Mirpur, Dhaka-1216</p>
-								<p><i class="fa fa-phone"></i> +8801715661065, +8801730097958</p>
-								<p><i class="fa fa-envelope"></i>info@gstlbd.com, gstlbd@hotmail.com</p>
-								<p><i class="fa fa-globe" aria-hidden="true"></i> www.gstlbd.com</p>
-							</address>                          
-                        </div>
-                    </div>
-
-                    <!--TOP RATED WIDGET END-->
-
-                    <!--RECENT REVIES WIDGET START-->
-
-                    <div class="col-sm-3">
-						<div class="widget widget-facebook">
-                            <h2>Fcebook</h2>
-                            <div class="pull-left">
-                            	<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="100%" height="250" style="border:none;overflow:hidden" 
-								scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <!--RECENT REVIES WIDGET END-->
-
-                    <!--RECENT POSTS WIDGET START-->
-
-                    <div class="col-sm-6">
-
-                        <div class="widget widget-map">
-
-                            <h2>Google Map</h2>														
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:250px;width:100%;'><div id='gmap_canvas' style='height:250px;width:600px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://www.buywebtrafficexperts.com">buy targeted traffic</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(23.8159828,90.36624119999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(23.8159828,90.36624119999999)});infowindow = new google.maps.InfoWindow({content:'<strong>GSTL</strong><br>Mirpur 11<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="copyright">
-
-        	<div class="container">
-
-        		<p>© Copyrights 2014-16. All Rights Reserved <a href="http://gstlbd.com/">Grand Soft Technology Ltd.</a></p>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-    <!--FOOTER END-->
-
-</div>
-
-<!--WRAPPER END-->
-
-<!-- Jquery Lib -->
-
-<script src="js/jquery-1.11.0.min.js"></script>
-<!-- Bootstrap -->
-
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/jquery.bxslider.min.js"></script>
-
-<script src="../../../maps.googleapis.com/maps/api/js-v=3.exp.htm"></script>
-
-<script src="js/owl.carousel.js"></script>
-
-<script src="js/modernizr.js"></script>
-
-<script type="text/javascript" src="js/skrollr.min.js"></script>
-
-<script src="js/functions.js"></script>
-
-
-</body>
-
-</html>
-
+  <?php get_footer();?>
