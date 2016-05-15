@@ -40,7 +40,7 @@ function default_menu(){
 add_image_size('staffs_image',253,253 ,true);
 
 // Activate Theme Options 
-//require_once('Admin/index.php');
+require_once('Admin/index.php');
 
 //For MultiPostThumbnails
 
